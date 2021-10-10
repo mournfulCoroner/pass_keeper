@@ -1,5 +1,6 @@
-var assert = require('chai').assert;
-// var script = require('./../script.js').won;
+let assert = require('chai').assert;
+let won = require('./../script').won;
+let createArray = require('./../script').createArray;
 
 describe('RandomArray', function() {
 

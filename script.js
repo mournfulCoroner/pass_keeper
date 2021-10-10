@@ -101,3 +101,7 @@ function won(arr) {
     }
     return true;
 }
+
+module.exports = {
+    createArray, won
+}
