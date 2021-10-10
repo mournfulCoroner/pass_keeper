@@ -1,5 +1,5 @@
 var assert = require('chai').assert;
-
+// var script = require('./../script.js').won;
 
 describe('RandomArray', function() {
 
@@ -16,8 +16,8 @@ describe('RandomArray', function() {
     it('numbers in array must be random', function () {
         let check = 0
         let array = createArray(3)
-        for(let i in array.length-2){
-            if(array[i] !== array[i+1] + 1){
+        for(let i = 0; i < array.length-1; i++){
+            if(array[i] != array[i+1] + 1){
                 check++
             }
         }
@@ -29,7 +29,7 @@ describe('RandomArray', function() {
 describe("winning", function() {
 
     it("if array is correct must be winning", function () {
-        let array = [1, 2, 3, 4, 5, 6, 7, 8]
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, "empty"]
 
         assert.equal(won(array), true)
     })
