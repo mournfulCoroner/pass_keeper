@@ -1,6 +1,7 @@
-let assert = require('chai').assert;
-let won = require('./../script').won;
-let createArray = require('./../script').createArray;
+var assert = require('chai').assert;
+var won = require('./../script').won;
+var createArray = require('./../script').createArray;
+var getPasswords = require('./../script').getPasswords
 
 describe('RandomArray', function() {
 

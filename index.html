@@ -9,16 +9,25 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <h1>Пароли, явки, пятнашки</h1>
         <p>Чтобы получить доступ к паролям, выиграйте в пятнашки</p>
-        <!-- <button id="generateField">Новая игра</button> -->
         <table id="myTable">
         </table>
     </div>
-    <canvas id="myCanvas" width="700" height="400"></canvas>
 
-    <div class="passwords">
+    <div class="passwords hide" id="passwords">
+        <input id="site" placeholder="Сайт"/>
+        <input id="password" placeholder="Пароль"/>
+        <button id="savePass">Сохранить</button>
+        <br>
+        <br>
+        <div id="list">
+            <div>id</div>
+            <div>Сайт</div>
+            <div>Пароль</div>
+            <div>Удалить</div>
+        </div>
     </div>
 </body>
 </html>
