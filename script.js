@@ -81,6 +81,8 @@ function handleDrop(e) {
         cells[cells.indexOf('empty')] = x;
         cells[index] = 'empty';
         if (won(cells)){
+            document.getElementById('main').classList.add("hide");
+            document.getElementById('passwords').classList.remove("hide");
             console.log( "You won!");
         } else {
             console.log("keep trying");
@@ -104,8 +106,6 @@ function won(arr) {
         else { return false;}
     }
 
-    document.getElementById('main').classList.add("hide");
-    document.getElementById('passwords').classList.remove("hide");
     return true;
 }
 
@@ -116,7 +116,7 @@ function getPasswords() {
 function setPassword(site, pass) {
     if(!site || !pass){
         document.getElementById('site').classList.add("error");
-        document.getElementById('password').classList.remove("error");
+        document.getElementById('password').classList.add("error");
         return;
     }
     passwords.list.push({ site: site, password: pass });
